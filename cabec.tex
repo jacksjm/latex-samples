@@ -1,0 +1,36 @@
+% Cabeçalho
+
+% ABNT
+\usepackage[utf8]{inputenc}
+\usepackage[lmargin=3cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry}
+\usepackage[nodisplayskipstretch]{setspace}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+
+% Pacotes Essenciais
+\usepackage{graphicx,xcolor,comment,enumerate,multirow,multicol,indentfirst}
+
+% Pacotes de Matemática
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools}
+
+% Pacote de Texto Exemplo
+\usepackage{blindtext}
+
+% New Commads
+\newcommand{\RR}{\mathds{R}}
+\newcommand{\QQ}{\mathds{Q}}
+\newcommand{\ZZ}{\mathds{Z}}
+\newcommand{\NN}{\mathds{N}}
+\newcommand{\MM}{\mathds{M}}
+\newcommand{\CC}{\mathds{C}}
+
+% Bibliografia
+\usepackage[round]{natbib}
+\bibliographystyle{agu}
+
+%\usepackage[grid]{eso-pic}
+%\usepackage{kantlipsum}
+
+\newenvironment{longcitation}
+    {\vspace{0.5cm}\hfill\begin{minipage}[c]{12cm}\setstretch{1.0}\small}
+    {\end{minipage}\vspace{0.5cm}\setstretch{1.5}}
