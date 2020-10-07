@@ -1,0 +1,22 @@
+\documentclass[a4paper,12pt]{article}
+\input{cabec}
+\usepackage{tikz}
+\usetikzlibrary{babel,quotes,angles}
+
+\begin{document}
+\setstretch{1.5}
+
+\begin{tikzpicture}
+\draw[step=.5cm,thick]
+-- (3,0) coordinate (a)
+-- (0,0) coordinate (b)
+-- (1.93,2.3) coordinate (c)
+(b) -- (1.5,0.54) coordinate (d)
+pic["$50^\circ$", draw=black, <->, angle eccentricity=1.2, angle radius=2.5cm]{angle=a--b--c}
+pic["$30^\circ$", draw=black, <->, angle eccentricity=1.5, angle radius=0.75cm]{angle=d--b--c}
+pic["$x$", draw=black, <->, angle eccentricity=1.5, angle radius=0.75cm]{angle=a--b--d}
+;
+\end{tikzpicture}
+
+
+\end{document}
